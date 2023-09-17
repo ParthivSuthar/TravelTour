@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Navbar */
+
+.navbar {
+    background-color: #f9f9f9;
+}
+
+#logo {
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-shadow: 0 1px 1px red;
+}
+
+#logo span {
+    color: royalblue;
+}
+
+.nav-item .nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: green;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.3s ease-in;
+}
+
+.nav-item .nav-link:hover {
+    background-color: yellowgreen;
+    transform: scale(1.1);
+}
+
+
+/* Hero Section */
+
+.hero-section {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    display: grid;
+    align-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content h5 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: whitesmoke;
+    text-shadow: 0 2px 2px black;
+}
+
+.content h1 {
+    font-size: 3rem;
+    color: white;
+    font-weight: 720;
+    text-shadow: 2px 5px black;
+}
+
+.content p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: beige;
+    text-shadow: 0 2px 2px black;
+}
+
+.content a {
+    background-color: antiquewhite;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s ease-in;
+}
+
+.content a:hover{
+    background-color: orangered;
+    color: whitesmoke;
+    transform: scale(1.2);
+}
+
+.change-text::after {
+    content: ' ';
+    color: orangered;
+    text-shadow: 0 2px 5px black;
+    animation: changing-text 10s infinite linear;
+}
+
+@keyframes changing-text {
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "United States";}
+    30%{content: "China";}
+    40%{content: "India";}
+    50%{content: "Pakistan";}
+    60%{content: "Italy";}
+    70%{content: "Turkey";}
+    80%{content: "Mexico";}
+    90%{content: "Germany";}
+    100%{content: "United kingdom";}
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        background-position: center;
+    }
+}
+
+
+/* Book Section */
+
+.main-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 0 2px 2px black;
+}
+
+.main-text h1 span {
+    color: blue;
+}
+
+.card {
+    box-shadow: 0px 5px 5px black;
+    border-radius: 8px;
+}
+
+.form-section input, textarea {
+    box-shadow: 0 2px 2px black;
+    font-size: 1.1rem;
+}
+
+
+
+.form-section #book-now {
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: none;
+    color: white;
+    background-color: orange;
+    border: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+#book-now:hover {
+    transform: scale(1.1);
+}
+
+
+/* Packages */
+
+.main-txt h1 {
+    font-weight: 650;
+    text-shadow: 0 2px 2px black;
+    font-size: 2.5rem;
+}
+
+.main-txt h1 span {
+    color: royalblue;
+}
+
+.package-card img {
+    width: 100%;
+}
+
+.card-body h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.card-body h6 {
+    font-size: 1.2rem;
+}
+
+.package-card a {
+    background-color: orangered;
+    text-decoration: none;
+    padding: 10px 25px;
+    color: aliceblue;
+    align-self: flex-start;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: 550;
+    transition: 0.3s ease-in;
+}
+
+.package-card a:hover {
+    color: whitesmoke;
+    background-color: black;
+    transform: scale(1.2);
+}
+
+
+/* Services */
+
+.services {
+    margin: 30px 30px;
+}
+
+.services-header h1 {
+    font-weight: 650;
+    text-shadow: 0 2px 2px black;
+    font-size: 2.5rem;
+}
+
+.services-header h1 span {
+    color: royalblue;
+}
+
+.service-card {
+    box-shadow: 1px 1px 10px;
+    border-radius: 8px;
+}
+
+.service-body {
+    padding-inline: 10px;
+}
+
+.service-card i {
+    font-size: 80px;
+    text-align: center;
+    color: #ffa500;
+    margin-top: 20px;
+}
+
+
+/* Gallery */
+
+.gallery {
+    margin-top: 100px;
+}
+
+.gallery-header h1 {
+    font-weight: 650;
+    text-shadow: 0 2px 2px black;
+    font-size: 2.5rem;
+}
+
+.gallery-header h1 span {
+    color: royalblue;
+}
+
+.gallery-img img {
+    height: 230px;
+    border-radius: 8px;
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.gallery-img img:hover {
+    transform: scale(1.1);
+}
+
+
+/* About Us */
+
+.about-us {
+    margin-top: 10rem;
+}
+
+.about-us-header h1 {
+    font-weight: 650;
+    text-shadow: 0 2px 2px black;
+    font-size: 2.5rem;
+}
+
+.about-us-header span {
+    color: orange;
+
+}
+
+.about-content {
+    margin-top: 50px;
+}
+
+.about-us-image img {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.about-us-content h2 {
+    font-weight: 650;
+    font-size: 2.1rem;
+}
+
+.about-us-content p {
+    font-size: 1rem;
+}
+
+.read-more {
+    background-color: orangered;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.5s ease-in;
+    border: none;
+}
+
+.read-more:hover {
+    width: 150px;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 7rem;
+    width: 100%;
+}
+
+.footer-header a {
+    font-size: 2rem;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-shadow: 0 1px 1px red;
+    text-decoration: none;
+}
+
+
+.footer-header a span {
+    color: royalblue;
+}
+
+.footer-header p {
+    font-size: 1.2rem;
+}
+
+.social-links i {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.social-links i:hover {
+    background-color: orangered;
+}
+
+
+
